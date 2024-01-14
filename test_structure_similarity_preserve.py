@@ -24,7 +24,7 @@ for K in [5, 10, 15, 20, 30, 50, 70, 80, 100]:
     Similarity_topK_all_nodes = [elem for sub_lst in Similarity_row_topK_node for elem in sub_lst]
     Similarity_nodes = len(Similarity_topK_all_nodes)
 
-    emb_filename = r"E:\研二下\第一篇论文\最终的实验结果\记录最终数据结果的原始文件\SiGAT\node_classification\citeseer\citeseer.emb"
+    emb_filename = r"~\teach\node_classification\citeseer\citeseer.emb"
     emb = utils.read_embeddings(emb_filename, n_node, config.n_emb)
 
     if measure == "dot":
